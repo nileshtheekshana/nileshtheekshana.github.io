@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilesh | Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor follower -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-text">&lt;N/&gt;</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+            <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-sphere sphere-1"></div>
+            <div class="gradient-sphere sphere-2"></div>
+            <div class="gradient-sphere sphere-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="greeting">
+                    <span class="wave">👋</span> Hello, I'm
+                </p>
+                <h1 class="name">
+                    <span class="name-letter">N</span><span class="name-letter">i</span><span class="name-letter">l</span><span class="name-letter">e</span><span class="name-letter">s</span><span class="name-letter">h</span>
+                </h1>
+                <div class="role-container">
+                    <span class="role-prefix">A</span>
+                    <span class="role" id="typed-role"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+                <p class="hero-description">
+                    I craft beautiful, responsive, and user-friendly web experiences 
+                    that bring ideas to life through clean code and creative design.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Let's Talk</span>
+                        <i class="fas fa-comments"></i>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/nileshtheekshana" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nilesh-theekshana/" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://x.com/nileshtheeksha" target="_blank" class="social-link" aria-label="X (Twitter)">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">developer.js</span>
+                    </div>
+                    <div class="window-content">
+                        <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+    <span class="code-property">name</span>: <span class="code-string">"Nilesh"</span>,
+    <span class="code-property">role</span>: <span class="code-string">"Web Developer"</span>,
+    <span class="code-property">skills</span>: [
+        <span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>, <span class="code-string">"JavaScript"</span>,
+        <span class="code-string">"React"</span>, <span class="code-string">"Node.js"</span>
+    ],
+    <span class="code-property">passion</span>: <span class="code-string">"Building awesome web apps"</span>,
+    <span class="code-method">sayHello</span>: <span class="code-keyword">function</span>() {
+        <span class="code-keyword">return</span> <span class="code-string">"Let's create something amazing!"</span>;
+    }
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span>
+                About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <img src="img/nilesh.jpeg" alt="Nilesh - Web Developer">
+                        </div>
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>
+                        Hello! I'm Nilesh, a passionate web developer with a love for creating 
+                        beautiful and functional websites. I enjoy turning complex problems into 
+                        simple, elegant solutions.
+                    </p>
+                    <p>
+                        My journey in web development started with curiosity about how websites work, 
+                        and has evolved into a full-fledged career where I get to build amazing digital 
+                        experiences every day.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me exploring new technologies, 
+                        contributing to open-source projects, or learning something new.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="2">0</span>
+                            <span class="stat-label">Live Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="500">0</span>
+                            <span class="stat-label">Commits</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="10">0</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span>
+                Skills & Technologies
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="img/html5.svg" alt="HTML5">
+                    </div>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="img/css3.svg" alt="CSS3">
+                    </div>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="img/javascript.svg" alt="JavaScript">
+                    </div>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="img/react.svg" alt="React">
+                    </div>
+                    <h3>React</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="img/nodejs.svg" alt="Node.js">
+                    </div>
+                    <h3>Node.js</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="img/git.svg" alt="Git">
+                    </div>
+                    <h3>Git</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="img/mongodb.svg" alt="MongoDB">
+                    </div>
+                    <h3>MongoDB</h3>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="img/figma.svg" alt="Figma">
+                    </div>
+                    <h3>Figma</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span>
+                Featured Projects
+            </h2>
+            <div class="projects-grid">
+                <!-- Project 1: Softsace -->
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://softsace.com" target="_blank" class="project-link" aria-label="Visit Softsace">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="img/softsace-preview.png" alt="Softsace Website Preview" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-label">Featured Project</span>
+                        <h3 class="project-title">Softsace</h3>
+                        <div class="project-description">
+                            <p>A modern web platform showcasing innovative software solutions. 
+                            Built with attention to user experience and clean design principles.</p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                        <div class="project-buttons">
+                            <a href="https://softsace.com" target="_blank" class="btn btn-small">
+                                <span>Visit Site</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: CryptoHoru -->
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://cryptohoru.com" target="_blank" class="project-link" aria-label="Visit CryptoHoru">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="img/cryptohoru-preview.png" alt="CryptoHoru Website Preview" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-label">Featured Project</span>
+                        <h3 class="project-title">CryptoHoru</h3>
+                        <div class="project-description">
+                            <p>A cryptocurrency-focused web platform providing users with 
+                            valuable insights and tools for navigating the crypto space.</p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>API Integration</li>
+                        </ul>
+                        <div class="project-buttons">
+                            <a href="https://cryptohoru.com" target="_blank" class="btn btn-small">
+                                <span>Visit Site</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04.</span>
+                Get In Touch
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>
+                        I'm currently available for freelance work and exciting opportunities. 
+                        If you have a project in mind or just want to say hello, feel free to reach out!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>nilesh@softsace.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Available Worldwide</span>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/nileshtheekshana" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nilesh-theekshana/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://x.com/nileshtheeksha" target="_blank" class="social-link" aria-label="X (Twitter)">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">&lt;N/&gt;</span>
+                </div>
+                <p class="footer-text">
+                    Designed & Built by Nilesh
+                </p>
+                <p class="footer-copyright">
+                    © 2026 All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
