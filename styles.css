@@ -697,6 +697,81 @@ section {
     color: var(--text-muted);
 }
 
+/* ===== Education Section ===== */
+.education {
+    background: var(--dark);
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.education-card {
+    background: var(--dark-light);
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    border: 1px solid var(--dark-lighter);
+    transition: var(--transition);
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
+}
+
+.education-icon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    background: var(--white);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px;
+}
+
+.education-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.education-icon.certification {
+    background: var(--white);
+}
+
+.education-content {
+    flex: 1;
+}
+
+.education-type {
+    font-size: 0.8rem;
+    color: var(--primary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.education-content h3 {
+    font-family: var(--font-main);
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+    color: var(--text);
+}
+
+.education-institution {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
 /* ===== Skills Section ===== */
 .skills {
     background: var(--dark-light);
@@ -1108,6 +1183,10 @@ section {
     .contact-content {
         grid-template-columns: 1fr;
     }
+
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1209,6 +1288,14 @@ section {
 
     .stat-number {
         font-size: 2.5rem;
+    }
+
+    .education-card {
+        padding: 1.5rem;
+    }
+
+    .education-content h3 {
+        font-size: 1.1rem;
     }
 
     .cursor,
