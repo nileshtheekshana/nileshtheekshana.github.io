@@ -1083,11 +1083,12 @@ section {
     }
 
     .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
     }
 
     .about-content {
@@ -1110,6 +1111,14 @@ section {
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    section {
+        padding: 4rem 0;
+    }
+
     .nav-links {
         display: none;
     }
@@ -1118,31 +1127,88 @@ section {
         display: flex;
     }
 
+    .navbar {
+        padding: 1rem 1.5rem;
+    }
+
     .name {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .role-container {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .section-title::after {
+        display: none;
     }
 
     .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.75rem;
     }
 
     .skill-card {
-        padding: 1.5rem;
+        padding: 1rem;
+    }
+
+    .skill-card h3 {
+        font-size: 0.85rem;
     }
 
     .skill-icon {
-        width: 60px;
-        height: 60px;
-        font-size: 2rem;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0.75rem;
+    }
+
+    .skill-icon img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .project-image {
+        height: 200px;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    .project-tech {
+        gap: 0.5rem;
+    }
+
+    .project-tech li {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .image-wrapper {
+        width: 220px;
+        height: 220px;
+    }
+
+    .about-stats {
+        gap: 2rem;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
     }
 
     .cursor,
@@ -1158,39 +1224,146 @@ section {
         cursor: auto;
     }
 
-    .projects-grid {
-        grid-template-columns: 1fr;
+    .scroll-indicator {
+        display: none;
     }
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+
     .hero {
         padding: 5rem 1rem 2rem;
+        min-height: auto;
     }
 
     .name {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+    }
+
+    .role-container {
+        font-size: 1rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
     }
 
     .hero-buttons {
         flex-direction: column;
+        gap: 0.75rem;
     }
 
     .btn {
         width: 100%;
         justify-content: center;
+        padding: 0.9rem 1.5rem;
+    }
+
+    .social-links {
+        gap: 0.75rem;
+    }
+
+    .social-link {
+        width: 45px;
+        height: 45px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+    }
+
+    .skill-card {
+        padding: 0.75rem;
+        border-radius: 12px;
+    }
+
+    .skill-card h3 {
+        font-size: 0.7rem;
+    }
+
+    .skill-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0.5rem;
+        border-radius: 10px;
+    }
+
+    .skill-icon img {
+        width: 28px;
+        height: 28px;
     }
 
     .about-stats {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: 1.5rem;
     }
 
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+    }
+
+    .image-wrapper {
+        width: 180px;
+        height: 180px;
+    }
+
+    .image-border {
+        top: 15px;
+        left: 15px;
+    }
+
     .project-info {
-        padding: 1.5rem;
+        padding: 1.25rem;
+    }
+
+    .project-title {
+        font-size: 1.3rem;
+    }
+
+    .project-description p {
+        font-size: 0.9rem;
     }
 
     .contact-form {
-        padding: 1.5rem;
+        padding: 1.25rem;
+    }
+
+    .contact-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info p {
+        font-size: 0.95rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.95rem;
+    }
+
+    .footer {
+        padding: 2rem 0;
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
     }
 }
