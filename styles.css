@@ -862,6 +862,7 @@ section {
     position: relative;
     height: 250px;
     overflow: hidden;
+    background: linear-gradient(135deg, var(--dark) 0%, var(--dark-lighter) 100%);
 }
 
 .project-img {
@@ -869,7 +870,12 @@ section {
     height: 100%;
     object-fit: cover;
     object-position: top;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+.project-img.loaded {
+    opacity: 1;
 }
 
 .project-card:hover .project-img {

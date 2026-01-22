@@ -219,6 +219,22 @@ document.addEventListener('mousemove', (e) => {
     });
 });
 
+// ===== Project Image Loading =====
+document.addEventListener('DOMContentLoaded', () => {
+    const projectImages = document.querySelectorAll('.project-img');
+    
+    projectImages.forEach(img => {
+        // If image is already cached/loaded
+        if (img.complete) {
+            img.classList.add('loaded');
+        } else {
+            img.addEventListener('load', () => {
+                img.classList.add('loaded');
+            });
+        }
+    });
+});
+
 // ===== Console Easter Egg =====
 console.log('%c👋 Hello there, curious developer!', 'font-size: 24px; font-weight: bold; color: #6366f1;');
 console.log('%cThanks for checking out my portfolio!', 'font-size: 14px; color: #10b981;');
