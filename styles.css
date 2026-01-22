@@ -764,8 +764,8 @@ section {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
 .project-card {
@@ -1078,7 +1078,7 @@ section {
     }
 
     .projects-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .about-content {
@@ -1147,6 +1147,10 @@ section {
 
     a, button, input, textarea {
         cursor: auto;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 }
 
